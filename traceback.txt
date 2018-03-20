@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 290, in script
+    ph "{size=+10}F{w=0.5]I{w=0.5]N{w=0.5]A{w=0.5]L{w=0.5]L{w=0.5]Y{w=0.5]!{/size} Do you have ANY idea how many times I've called trying to get ahold of you?!"
+ValueError: invalid literal for float(): 0.5]I{w=0.5]N{w=0.5]A{w=0.5]L{w=0.5]L{w=0.5]Y{w=0.5]!{/size
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 290, in script
+    ph "{size=+10}F{w=0.5]I{w=0.5]N{w=0.5]A{w=0.5]L{w=0.5]L{w=0.5]Y{w=0.5]!{/size} Do you have ANY idea how many times I've called trying to get ahold of you?!"
+  File "/home/skyrius/Documents/renpy-6.99.14.1-sdk/renpy/ast.py", line 643, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "/home/skyrius/Documents/renpy-6.99.14.1-sdk/renpy/exports.py", line 1176, in say
+    who(what, *args, **kwargs)
+  File "/home/skyrius/Documents/renpy-6.99.14.1-sdk/renpy/character.py", line 1013, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/home/skyrius/Documents/renpy-6.99.14.1-sdk/renpy/character.py", line 817, in do_display
+    **display_args)
+  File "/home/skyrius/Documents/renpy-6.99.14.1-sdk/renpy/character.py", line 470, in display_say
+    dtt = DialogueTextTags(what)
+  File "/home/skyrius/Documents/renpy-6.99.14.1-sdk/renpy/character.py", line 72, in __init__
+    value = float(value)
+ValueError: invalid literal for float(): 0.5]I{w=0.5]N{w=0.5]A{w=0.5]L{w=0.5]L{w=0.5]Y{w=0.5]!{/size
+
+Linux-3.10.0-693.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+Ren'Py 6.99.14.1.3218
+Eight Bells Rain 1.0
+Fri Mar  2 16:43:54 2018

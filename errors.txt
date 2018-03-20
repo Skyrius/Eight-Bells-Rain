@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 213: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "A feeling as if time was being stretched, or something thin and whispy was swirling just out of view
+
+Ren'Py Version: Ren'Py 6.99.14.1.3218
+Wed Feb 28 15:23:25 2018
