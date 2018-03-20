@@ -524,6 +524,7 @@ label start:
     
     scene black
     with wipedown
+    play music "music/Stage-Door.mp3" fadeout 2.0 fadein 1.0
     
     pause 2.0
     
@@ -560,7 +561,7 @@ label start:
     
     show leyla wind3
     
-    L "I need a bit of a shortcut to the park, accompany me for a bit."
+    L "I need a bit of a shortcut to the park, accompany me for a while."
     
     "The wind whistled and then stopped, as if the air, right down to the individual atoms, had frozen in place."
     
@@ -618,9 +619,17 @@ label start:
     
     "She had to be careful in manuevering to avoid them as she plunged horizontally, and if there was one thing that was difficult about this type of \'flying\', it was manuevering."
     
-    "And angling too high above the high-rises was difficult too. The higher into the sky she went, the harder it became to control these concepts."
+    "And angling above the high-rises was difficult too. The higher into the sky she went, the harder it became to control."
     
     "The howling, sprinting wind from the other side was like an excited dog, and the sky was an open field it wanted to sprint through."
+    
+    "Even at this height, sometimes the wind would try to jerk off course and run off into the void of a night sky above."
+    
+    "But she held it steady, and far down below, a quiet change began to occur in the city as the park drew near."
+    
+    
+    
+    
     
     
 
