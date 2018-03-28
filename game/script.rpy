@@ -1,42 +1,5 @@
 ﻿# The script of the game goes in this file.
 
-#images
-image leyla neutral = "helena/helena_neutral.png"
-image leyla neutral2 = "helena/helena_neutral2.png"
-image leyla neutral2 red = "helena/helena_neutral2_redeyes.png"
-image leyla calm = "helena/helena_eyes_closed.png"
-image leyla surprised = "helena/helena_surprised.png"
-image leyla surprised2 = "helena/helena_surprised2.png"
-image leyla angry = "helena/helena_angry.png"
-image leyla annoyed = "helena/helena_annoyed.png"
-image leyla annoyed2 = "helena/helena_annoyed2.png"
-image leyla exasperated = "helena/helena_exasperated.png"
-image leyla sad = "helena/helena_sad.png"
-image leyla sigh = "helena/helena_sigh.png"
-image leyla smile1 = "helena/helena_smile_1.png"
-image leyla smile2 = "helena/helena_smile_2.png"
-image leyla smile3 = "helena/helena_smile_3.png"
-image leyla smile4 = "helena/helena_smile_4.png"
-image leyla smug = "helena/helena_smug.png"
-image leyla wind1 = "helena/helena_wind1.png"
-image leyla wind2 = "helena/helena_wind2.png"
-image leyla wind3 = "helena/helena_wind3.png"
-image leyla wind4 = "helena/helena_wind4.png"
-
-image cyrus sigh = "eto/eto_sigh.png"
-
-image sophia neutral = "misaki/misaki_neutral.png"
-
-image haruha neutral = "haruha/haruha_neutral.png"
-
-image nino neutral = "nino/nino_neutral.png"
-
-image sabata neutral = "sabata/sabata_neutral.png"
-
-image sera neutral = "sera/sera_neutral.png"
-
-image elaine neutral = "sisuka/sisuka_neutral.png"
-
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -125,7 +88,7 @@ label start:
     
     "It was a suggestion." 
     
-    "The desire to stay dry, the howl of the cold and call of a warm bed, the laziness of a gray afternoon, the serenity of raindrops on the window pane, the convenience of canceled meetings and early days off."
+    "The desire to stay dry, the howl of the cold and call of a warm bed, the laziness of a gray afternoon, the sound of raindrops on the window pane, the convenience of canceled meetings and early days off."
     
     "Amplified, reinforced, and then gently tucked into the corner of their minds, as if putting a child to sleep after a long day."
     
@@ -187,10 +150,11 @@ label start:
     
     scene black
     with dissolve
+    
+    play music "music/New-Paradise_loop.ogg" fadeout 2.0 fadein 2.0
     pause 1.0
     stop ambient fadeout 1.0
     
-    play music "music/New-Paradise_loop.ogg" fadeout 2.0 fadein 2.0
     scene bg room1 night
     with dissolve
     
@@ -213,7 +177,7 @@ label start:
     
     "As the clock ticked on the wall and the seconds rolled by, a strange ambience filled the room."
     
-    "A feeling as if time were being stretched, or something thin and whispy was swirling just out of view"
+    "A feeling as if time were being stretched, or something thin and whispy was swirling just out of view."
     
     "If an onlooker had peeked into this room, they would see nothing out of the ordinary."
     
@@ -330,9 +294,11 @@ label start:
     
     L "So, what was so important that you simultaneously couldn't be bothered to come find me in person and yet decided to run around in an abyss looking for a phone?"
     
-    S "Come to Central Park, we need help."
+    S "Can you come to Central Park? We need help."
     
     show leyla annoyed2
+    
+    "Leyla paused, her relative nonchalance slowly giving way to suspicion."
     
     L "Now that... is a bit farfetched."
     
@@ -342,7 +308,7 @@ label start:
     
     show leyla surprised2
     
-    "Thirty minutes...that was probably a new record, impressive. Leyla briefly considered hiding things a bit more thoroughly next time."
+    "Thirty minutes...that was probably a new record, impressive. She briefly considered hiding things a bit more thoroughly next time."
     
     S "And I would've just gone to you myself but I need to stay here, they're having a hard time keeping it contained. But I can't do that {i}and{/i} purge this thing so-"
     
@@ -381,6 +347,8 @@ label start:
     L "You can explain everything in full detail later. I'll go help."
     
     S "Thanks, teach! I promise it'll be super quick."
+    
+    "There was a pause."
     
     S "...uh, that being said...could you wait, like, 10 minutes before heading over?"
     
@@ -428,7 +396,7 @@ label start:
     
     S "...Just, I'm sure I can make everyone understand with a bit of time... And a lot of effort."
     
-    S "And...and, you've met some of them! Elaine is just... a lot of them have gone through a lot. But like, they're good people! And a lot of them like you, you know that. Even those who've lost a lot."
+    S "And...and, you've met some of them! Elaine is just... a lot of them have gone through a lot. But like, they're good people! And a lot of them like you, you know that! Even those who've lost a lot..."
     
     S "And just... can we not fight about this right now?" 
     
@@ -447,6 +415,8 @@ label start:
     "Blantantly obvious to everyone, including Sophia."
     
     show leyla sigh
+    
+    "Leyla let the silence stretch out a bit longer, making sure Sophia understood that she still wasn't happy about this, then finally sighed."
     
     L "Haaah...fine. I did technically already agree to this earlier."
     
@@ -484,7 +454,7 @@ label start:
     
     "She had always had detractors, but after she took on a human as a student, she had basically set off a hornet's nest. Not that it mattered to her."
     
-    show leyla neutral
+    show leyla neutral2
     
     "She had never been one for whatever vague political grabs at power those around her were always trying to position themselves for."
     
@@ -499,6 +469,8 @@ label start:
     "After all, it was that blindness that made them ignore a once in a millenia opportunity simply because it had shown up on this side instead of their own."
     
     play sound "music/clock-chimes.mp3"
+    
+    show leyla neutral
     
     "In the distance, the faint but heavy chime of the old clock tower tolled out the midnight call- a rare piece of history that hadn't been mowed down with the modernization of the city in years past."
     
@@ -535,7 +507,7 @@ label start:
     
     "The night air came rushing in, cold and biting. It was, after all, still winter."
     
-    show leyla neutral
+    show leyla neutral with dissolve
     
     "Leyla stepped onto the windowsill, one hand grabbing the edge of the window and one outstretched."
     
@@ -581,9 +553,11 @@ label start:
     
     "Sophia had often asked her what it felt like to \'fly\', being one of the few concepts she had no affinity for."
     
-    "And Leyla had repeatedly explained that, because humans have such vivid imaginations, the fact that she thought of it as flying was one of things that made it hard for her to grasp the concept."
+    "And Leyla had repeatedly explained that, because humans have such vivid imaginations, thinking of it as flying made it harder to grasp the concept."
     
-    "One things humans did, astoudingly well, was conjure up sensations of events they had never experienced. Flying, to Sophia, was gliding, twisting and speeding through the air."
+    "One things humans did, astoudingly well, was conjure up sensations of events they had never experienced." 
+    
+    "Flying, to Sophia, was gliding, twisting and speeding through the air."
     
     "Weightless and agile, like swimming through frictionless water with jetpacks."
     
@@ -599,7 +573,7 @@ label start:
     
     "She imagined that the appeal of skydiving must be quite similar for humans."
     
-    "The rush of stepping off of extreme heights wasn't what scared people from doing it, it was the impending knowledge of the ground sprinting up to meet you in an excruciating end to the freefall."
+    "The rush of stepping off of extreme heights wasn't what scared people from doing it, it was the impending knowledge of the ground rushing up to meet you in an excruciating end to the freefall."
     
     "Take that away, and suddenly thousands of thrill-seekers flocked to the experience."
     
@@ -619,18 +593,104 @@ label start:
     
     "She had to be careful in manuevering to avoid them as she plunged horizontally, and if there was one thing that was difficult about this type of \'flying\', it was manuevering."
     
-    "And angling above the high-rises was difficult too. The higher into the sky she went, the harder it became to control."
+    "Angling above the high-rises was difficult too. The higher into the sky she went, the harder it became to control her trajectory."
     
-    "The howling, sprinting wind from the other side was like an excited dog, and the sky was an open field it wanted to sprint through."
+    "The howling, sprinting wind from the other side was like an excited dog, and the sky was an open field it wanted to romp through."
     
     "Even at this height, sometimes the wind would try to jerk off course and run off into the void of a night sky above."
     
     "But she held it steady, and far down below, a quiet change began to occur in the city as the park drew near."
     
+    scene black
+    with wipedown
+    
+    pause 1.0
+    
+    play music "music/Strange-Zone_Looping.mp3" fadeout 2.0 fadein 1.0
+    
+    scene bg city3 night empty
+    with wipedown
+    
+    "As her destination approached, Leyla gradually angled herself towards the ground, wresting the excited winds into a soft, slow breeze."
+    
+    "And by the time she was within sight of the ground, the city had become a empty, desolate gallery."
+    
+    "All of the streets were devoid of people and activity."
+    
+    "It almost seemed as if she had turned into an abandoned part of town, if it weren't for the hectic noise and lights coming from behind, just a few dozen feet away."
+    
+    "It was like a small bubble of emptiness in the chaotic and boisterous nightlife of the city, quietly engulfing the area around the park."
+    
+    "Somewhat like when the rain arrived, though on a much smaller scale."
+    
+    "It didn't force anyone out of the area, but rather people would simply get the urge to take another route, find a club in another area- a reticent suggestion nestled in the back of their mind."
+    
+    show leyla wind2 with dissolve
+    
+    "Leyla alighted on the ground once she was far enough into the bubble that no prying eyes would see her land."
+    
+    "The wind around her gave her a final whiny, tugging her arms lightly upwards, towards the night sky."
+    
+    show leyla wind4
+    
+    L "I'm sorry, I have work tonight so I can't play with you."
+    
+    show leyla wind3
+    
+    L "Thank you for taking me here though, I'll make sure to find time for a stroll through the sky next time."
+    
+    "The breeze around her swirled, almost like an animal circling happily, then faded into silence."
+    
+    stop ambient fadeout 1.0
+    
+    show leyla smile1
+    
+    "Without the sound of the wind, the silence of the area fully settled like a heavy blanket."
+    
+    show leyla neutral
+    
+    "Leyla glanced behind her at the large clock tower- about five minutes to go still." 
+    
+    "The park was just around the corner, but it would be troublesome to arrive while Elaine was still around."
+    
+    "For the time being, she was close enough to do some quick reconnaissance on the anomaly without getting into range of the other humans."
+    
+    show leyla calm
+    
+    "Leyla closed her eyes and steadied her breath, reaching out mentally for the familiar tug of energy from the other side."
+    
+    scene bg city3 night invert
+    show leyla calm
+    with expandout
+    
+    "Almost immediately, the area near the park burst out with energy. The swirling forces radiated out before suddenly crashing into the surrounding barrier, collapsing back in on itself."
+    
+    "It was considerably larger than many of the previous anomalies, another troublesome trend. And given the purity of the energy, unmuddled by human thoughts, it must have appeared very recently."
+    
+    "She could understand why they were having Sophia contain it. It would've taken an entire unit of their normal grunts to manage it, during a time when they needed manpower elsewhere."
+    
+    "What she couldn't understand, then and now, was their shortsightedness when it came to actually resolving the issue. This was a large anomaly, but Sophia could have destroyed it on her own easily."
+    
+    "Some of the other commanders were lenient enough to not nitpick over {i}how{/i} she did it, but Elaine was about as flexible as a steel wall, behind a titanium vault, buried under ten tons of cement...at the bottom of the ocean."
+    
+    "Any power she perceived as originating from the other side, even if it was being used for their sake, by someone who {i}was{/i} human, was strictly forbidden."
+    
+    "And so, this situation."
+    
+    "Shaking off her irritation, Leyla sharped her focus, probing into the barrier. There was a brief resistance, then she was let through when Sophia realized who was trying to get in."
+    
+    "It also doubled as her arrival announcement to her student."
+    
+    "An anomaly of this size wasn't, strictly speaking, impossible. However, it would be very difficult for it to appear without a catalyst of some sort."
+    
+    "Knowing Sophia, she had probably already found whatever it was that first let the anomaly manifest. So her job should simply be to send it back to the other side."
+    
+    "Luckily, even from this distance, it was obvious that this was a physical anomaly. It had a physical form or force, existed in the world of senses."
+    
+    "{i}Ousia{/i}, as those from the other side would recognize it, though to the humans it was simply an anomaly. Something that didn't belong on this side."
+    
+    "Even though if a non-physical anomaly had manifested- one born from a thought, an emotion, or, worst of all, a {i}belief{/i}- it would be magnitudes harder to deal with."
     
     
     
-    
-    
-
     return

@@ -66,3 +66,7 @@ transform slightleft:
 transform slightright:
     xalign 0.75
     yalign 1.0
+
+#ATL transformations
+define expandout = AlphaDissolve("alpha_expand", delay = 2.0)
+define contractin = AlphaDissolve("alpha_contract", delay = 2.0)
